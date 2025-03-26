@@ -1,0 +1,2257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="/style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .container {
+            width: 1140px;
+            margin: 0 auto;
+        }
+
+        .all-packages {
+            display: flex;
+            gap: 40px;
+        }
+
+        .place {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+        }
+
+        .awm {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            border: 1px solid #dee2e6;
+            justify-content: center;
+            height: 37px;
+            width: 33.33%;
+            font-size: 14px;
+            font-family: "Heebo";
+            padding: 8px 0px;
+        }
+
+        .card_content {
+            padding: 24px;
+        }
+
+        .card_content p {
+            color: #808b8d;
+            font-size: 16px;
+            font-family: "Heebo";
+            margin-bottom: 16px;
+        }
+
+        .amount {
+            text-align: center;
+        }
+
+        .amount h3 {
+            color: #2c3e50;
+            font-size: 24.676px;
+            font-family: "Nunito";
+        }
+
+        .amount i {
+            color: #808b8d;
+            font-size: 16px;
+            margin-bottom: 16px;
+        }
+
+        .button {
+            text-align: center;
+        }
+
+        .button .left {
+            color: #ffffff;
+            font-size: 14px;
+            font-family: "Nunito";
+            background-color: #86b817;
+            padding: 4px 16px;
+            border: none;
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+        }
+
+        .button .right {
+            color: #ffffff;
+            font-size: 14px;
+            font-family: "Nunito";
+            background-color: #86b817;
+            padding: 4px 16px;
+            border: none;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+        }
+
+        .one {
+            width: 33%;
+            box-shadow: 0px 0px 400px -78px rgba(0, 0, 0, 0.75);
+            -webkit-box-shadow: 0px 0px 400px -78px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: 0px 0px 400px -78px rgba(0, 0, 0, 0.75);
+        }
+
+        .all-packages img {
+            width: 100%;
+        }
+
+        .card_content {
+            text-align: center;
+        }
+
+        .beauty {
+            color: #86b817;
+            font-size: 16px;
+            font-family: "Nunito";
+            position: relative;
+            display: inline-block;
+            padding: 0px 10px;
+            background-color: #ffffff;
+        }
+
+
+        .beauty::after {
+            position: absolute;
+            content: "";
+            top: 15px;
+            height: 2px;
+            left: 50%;
+            width: 231px;
+            background-color: #86b817;
+            transform: translateX(-50%);
+            z-index: -1;
+        }
+
+
+        .beauty::before {
+            position: absolute;
+            content: "";
+            bottom: 16px;
+            height: 2px;
+            left: 51px;
+            width: 165px;
+            background-color: #86b817;
+            transform: translateX(-50%);
+            z-index: -1;
+        }
+
+
+
+        .desinge {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 48px;
+            font-family: "Nunito";
+            font-size: 31.69px;
+        }
+
+        .tourist {
+            display: flex;
+            gap: 40px;
+            padding: 48px 0;
+        }
+
+        .abc {
+            color: #86b817;
+            padding-right: 16px;
+            font-family: "Nunito", sans-serif;
+            margin-bottom: 8px;
+            width: 100px;
+            font-size: 16px;
+            text-transform: uppercase;
+            position: relative;
+        }
+
+        .abc::after {
+            position: absolute;
+            content: "";
+            top: 4px;
+            right: -42px;
+            height: 2px;
+            width: 50px;
+            background-color: #86b817;
+        }
+
+        .abc::before {
+            position: absolute;
+            content: "";
+            bottom: 6px;
+            right: -79px;
+            height: 2px;
+            width: 87px;
+            background-color: #86b817;
+        }
+
+        .fivestar {
+            display: flex;
+            gap: 100px;
+            width: 558px;
+            height: 96px;
+            margin-left: -8px -12px 24px;
+            font-family: "Heebo";
+        }
+
+        .ak47 {
+            display: flex;
+            gap: 10px;
+        }
+
+        .about_img {
+            width: 100%;
+        }
+
+        .tourist_left {
+            width: 50%;
+        }
+
+        .tourist_right {
+            width: 50%;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .right h1 span {
+            color: #85b817;
+            text-transform: capitalize;
+        }
+
+        .right h1 {
+            font-family: "Nunito", sans-serif;
+            margin-bottom: 24px;
+            width: 534px;
+            font-size: 40px;
+        }
+
+        .lorem {
+            color: #808b8d;
+            margin-bottom: 24px;
+            width: 534px;
+            height: 48;
+            font-family: "Heebo";
+        }
+
+        .lorem2 {
+            color: #808b8d;
+            margin-bottom: 24px;
+            width: 534px;
+            height: 72px;
+            font-family: "Heebo";
+        }
+
+        .press-area {
+            margin-top: 20px;
+        }
+
+        .press-area a {
+            color: white;
+            background-color: #86b817;
+            font-family: "Nunito";
+            text-align: center;
+            padding: 16px 48px;
+        }
+
+        .ak47 p {
+            text-transform: capitalize;
+            font-family: "Heebo";
+            padding-bottom: 10px;
+        }
+
+        .midel {
+            text-align: center;
+        }
+
+        .midel p::before {
+            position: absolute;
+            content: "";
+            bottom: 6px;
+            right: -188px;
+            height: 2px;
+            width: 233px;
+            background-color: #86b817;
+            transform: translateX(-50%);
+            z-index: -2;
+        }
+
+        .midel p {
+            display: inline-block;
+            color: #86b817;
+            font-family: "Nunito";
+            background-color: #ffffff;
+            margin-bottom: 8px;
+            padding: 0px 10px;
+            font-size: 16px;
+            position: relative;
+        }
+
+
+
+        .midel p::after {
+            position: absolute;
+            content: "";
+            top: 4px;
+            right: -123px;
+            height: 2px;
+            width: 173px;
+            background-color: #86b817;
+            transform: translatex(-50%);
+            z-index: -1;
+        }
+
+        .midel h1 {
+            color: #2c3e50;
+            font-family: "Nunito";
+            margin-bottom: 48px;
+            font-size: 40px;
+        }
+
+        .icon {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 24px;
+        }
+
+
+        .tour {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .art {
+            width: 280px;
+            box-shadow: 0px 0px 88px -28px rgba(0, 0, 0, 0.75);
+            -webkit-box-shadow: 0px 0px 88px -28px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: 0px 0px 88px -28px rgba(0, 0, 0, 0.75);
+            padding: 24px;
+            transition: .5s;
+        }
+
+        .art:hover {
+            background-color: #85b817;
+        }
+
+        .art:hover h3 {
+            color: white;
+        }
+
+        .art:hover p {
+            color: white;
+        }
+
+        .art:hover i {
+            color: white;
+        }
+
+        .art i {
+            font-size: 40px;
+            padding-bottom: 20px;
+            color: #85b817;
+        }
+
+        .art h3 {
+            color: #2c3e50;
+            font-size: 20px;
+            font-family: "Heebo";
+            margin-bottom: 8px;
+        }
+
+        .art p {
+            color: #808b8d;
+            font-size: 16px;
+            font-family: "Heebo";
+            margin-bottom: 16px;
+        }
+
+        .service-area {
+            margin-left: 12px;
+            margin-right: 12px;
+            margin-top: 48px;
+            margin-bottom: 48px;
+        }
+
+        .packages-area {
+            margin-left: 12px;
+            margin-right: 12px;
+            margin-top: 48px;
+            margin-bottom: 48px;
+        }
+
+        .package_head {
+            text-align: center;
+        }
+
+        .process-area {
+            padding: 48px 12px;
+        }
+
+        .team {
+            text-align: center;
+        }
+
+        .team h2 {
+            margin-bottom: 100px;
+        }
+
+        .idea {
+            color: #86b817;
+            font-size: 16px;
+            font-family: "nunito";
+            margin-bottom: 8px;
+            padding: 0px 10px;
+            background-color: #ffffff;
+            position: relative;
+            display: inline-block;
+        }
+
+
+
+        .idea::after {
+            position: absolute;
+            content: "";
+            top: 18px;
+            left: 50%;
+            height: 3px;
+            width: 193px;
+            background-color: #86b817;
+            transform: translateX(-50%);
+            z-index: -1;
+        }
+
+        .idea::before {
+            position: absolute;
+            content: "";
+            top: 5px;
+            height: 2px;
+            width: 133px;
+            background-color: #86b817;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: -1;
+        }
+
+        .kolkata {
+            color: #2c3e50;
+            font-size: 31.68px;
+            margin-bottom: 48px;
+            font-family: "Nunito";
+        }
+
+        .Easy {
+            display: flex;
+            gap: 3%;
+        }
+
+        .mariyana {
+            border: 1px solid #86b817;
+            padding: 48px 24px 24px;
+            text-align: center;
+            position: relative;
+        }
+
+        .mariyana i {
+            font-size: 46.9px;
+            height: 100px;
+            width: 100px;
+            background-color: #86b817;
+            border-radius: 50%;
+            line-height: 100px;
+            color: #ffffff;
+            position: absolute;
+            top: -50px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .mariyana h4 {
+            color: #2c3e50;
+            font-size: 20px;
+            font-family: "Nunito";
+            margin: 24px 0px 8px;
+
+        }
+
+        .mariyana p {
+            color: #808b8d;
+            font-size: 16px;
+            font-family: "Heebo";
+        }
+
+        .booking {
+            background: linear-gradient(rgba(15, 23, 43, .7), rgba(15, 23, 43, .7)), url(/img/booking.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            justify-content: space-between;
+            padding: 48px;
+        }
+
+        .booking .left {
+            color: #ffffff;
+            width: 48%;
+        }
+
+        .booking .left h6 {
+            color: #ffffff;
+            font-size: 16px;
+            font-family: "Nunito";
+            margin: 0px 0px 8px;
+        }
+
+        .booking .left h2 {
+            color: #ffffff;
+            font-size: 31.69px;
+            font-family: "Nunito";
+            margin: 0px 0px 24px;
+        }
+
+        .booking .left p {
+            color: #ffffff;
+            font-size: 16px;
+            font-family: "Heebo";
+            margin-bottom: 24px;
+        }
+
+        .booking .left span {
+            color: #ffffff;
+            font-size: 16px;
+            font-family: "Heebo";
+            margin-bottom: 40px;
+            display: block;
+        }
+
+        .booking .left a {
+            color: #f5f5f5;
+            font-size: 16px;
+            font-family: "Nunito";
+            padding: 16px 48px;
+            background-color: transparent;
+            border: 1px solid #f5f5f5;
+            text-decoration: none;
+        }
+
+        .booking .right {
+            color: #808b8d;
+            width: 48%;
+        }
+
+        .booking .right h1 {
+            color: #ffffff;
+            font-size: 31.57px;
+            font-family: "Nunito";
+            margin-bottom: 24px;
+        }
+
+        .output {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .output input {
+            width: 48%;
+            padding: 16px 12px;
+            margin-bottom: 25px;
+            background-color: transparent;
+            border: 1px solid #fff;
+        }
+
+        .output select {
+            width: 48%;
+            height: 51px;
+            background-color: transparent;
+            border: 1px solid #fff;
+            color: #808b8d;
+            padding-left: 10px;
+        }
+
+        .output textarea {
+            width: 100%;
+            height: 100px;
+            padding: 16px 12px;
+            background-color: transparent;
+            border: 1px solid #fff;
+            font-size: 20px;
+            font-family: "Heebo";
+        }
+
+        .right button {
+            width: 100%;
+            color: #ffffff;
+            height: 57px;
+            font-size: 16px;
+            padding: 16px 12px;
+            margin-top: 25px;
+            background-color: transparent;
+            border: 1px solid #fff;
+        }
+
+        .travel_side {
+            padding: 48px 12px;
+        }
+
+        .travel {
+            text-align: center;
+        }
+
+        .travel h6 {
+            color: #86b817;
+            font-size: 16px;
+            font-family: "Nunito";
+            background-color: #ffffff;
+            margin-bottom: 8px;
+            padding: 0px 10px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .travel h6::before {
+            position: absolute;
+            content: "";
+            top: 5px;
+            left: 50%;
+            height: 2px;
+            width: 216px;
+            background-color: #86b817;
+            transform: translateX(-50%);
+            z-index: -1;
+        }
+
+        .travel h6::after {
+            position: absolute;
+            content: "";
+            top: 15px;
+            left: 50%;
+            height: 2px;
+            width: 281px;
+            background-color: #86b817;
+            transform: translateX(-50%);
+            z-index: -1;
+        }
+
+
+
+        .travel h2 {
+            color: #2c3e50;
+            margin-bottom: 48px;
+            font-size: 40px;
+            font-family: "Nunito";
+        }
+
+        .travel_people {
+            display: flex;
+            margin: 24px 0px 0px;
+            padding: 0px 12px;
+            gap: 3%;
+
+        }
+
+        .travel_people img {
+            width: 261px;
+            height: 261px;
+        }
+
+        .guide_item {
+            overflow: hidden;
+            position: relative;
+            box-shadow: 7px 3px 179px -49px rgba(0, 0, 0, 0.75);
+            -webkit-box-shadow: 7px 3px 179px -49px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: 7px 3px 179px -49px rgba(0, 0, 0, 0.75);
+        }
+
+        .guide_img {
+            height: 263px;
+            overflow: hidden;
+        }
+
+        .guide_item img {
+            transition: .5s;
+        }
+
+        .guide_item:hover img {
+            scale: 110%;
+        }
+
+        .band {
+            position: absolute;
+            bottom: 75px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .band i {
+            border-radius: 50%;
+            width: 38px;
+            height: 38px;
+            border: 2px solid #ffffff;
+            line-height: 35px;
+            text-align: center;
+            color: #85b817;
+            background-color: #ffffff;
+            transition: .5s;
+            border-bottom: 1px solid #85b817;
+        }
+
+        .band i:hover {
+            background-color: #86b817;
+            color: #fff;
+        }
+
+        .desig_area {
+            text-align: center;
+            padding: 24px;
+            font-size: 16px;
+            font-family: "Nunito";
+        }
+
+        .testimonial_side {
+            padding: 48px 12px;
+            text-align: center;
+        }
+
+        .testimonial_side h6 {
+            color: #86b817;
+            font-size: 16px;
+            font-family: "Nunito";
+            background-color: #ffffff;
+            margin-bottom: 8px;
+            padding: 0px 10px;
+            text-align: center;
+            position: relative;
+            display: inline-block;
+        }
+
+        .testimonial_side h6::before {
+            position: absolute;
+            content: "";
+            top: 15px;
+            left: 50%;
+            height: 2px;
+            width: 260px;
+            background-color: #86b817;
+            transform: translateX(-50%);
+            z-index: -1;
+        }
+
+
+        .testimonial_side h6::after {
+            position: absolute;
+            content: "";
+            top: 5px;
+            left: 50%;
+            height: 2px;
+            width: 200px;
+            background-color: #86b817;
+            transform: translateX(-50%);
+            z-index: -1;
+        }
+
+        .testimonial_side h1 {
+            color: #2c3e50;
+            font-size: 31.72px;
+            font-family: "Nunito";
+            margin-bottom: 48px;
+            text-align: center;
+        }
+
+        .testimonial_people {
+            display: flex;
+            gap: 2%;
+        }
+
+        .testimonial_people .people {
+            text-align: center;
+            padding: 24px;
+            transition: .5s;
+            border: 1px solid #dee2e6;
+        }
+
+        .people img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+        }
+
+        .people h5 {
+            color: #808b8d;
+            font-size: 20px;
+            font-family: "Nunito";
+        }
+
+        .people p {
+            color: #808b8d;
+            font-size: 16px;
+            font-family: "Heebo";
+            margin-bottom: 16px;
+        }
+
+        .people:hover {
+            background-color: #86b817;
+        }
+
+        .people:hover h5 {
+            color: white;
+        }
+
+        .people:hover p {
+            color: #ffffff;
+        }
+
+        footer {
+            background-color: #14141f;
+        }
+
+        .company_area {
+            display: flex;
+            justify-content: space-between;
+            padding: 48px 12px;
+        }
+
+        .company {
+            margin-top: 48px;
+            padding: 0px 24px;
+        }
+
+        .company h4 {
+            color: #ffffff;
+            font-size: 22.344px;
+            font-family: "Nunito";
+            margin-bottom: 16px;
+        }
+
+        .company a {
+            color: #ffffff;
+            font-size: 15px;
+            font-family: "Nunito";
+            margin-bottom: 5px;
+        }
+
+        .company p {
+            color: #ffffff;
+            font-family: "Heebo";
+            font-size: 16px;
+            margin-bottom: 8px;
+        }
+
+        .icon_area {
+            display: flex;
+            gap: 10%;
+        }
+
+        .icon_white i {
+            border-radius: 50%;
+            width: 34px;
+            height: 35px;
+            border: 2px solid #fff;
+            text-align: center;
+            line-height: 32px;
+            transition: .5s;
+            color: #fff;
+        }
+
+        .icon_white i:hover {
+            background-color: #ffffff;
+            color: #86b817;
+        }
+
+        .company .img_team {
+            display: flex;
+        }
+
+        .company .img_iteam img {
+            height: 53.1px;
+            width: 75.66px;
+        }
+
+        .company ul li {
+            color: #ffffff;
+            font-size: 15px;
+            font-family: "Nunito";
+            margin-bottom: 5px;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        header {
+            background-color: #14141f;
+        }
+
+        .enjoy-area {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 0;
+
+        }
+
+        .enjoy-1 ul {
+            display: flex;
+            font-size: 14px;
+            font-family: "Heebo";
+            gap: 12px;
+        }
+
+        .enjoy-1 ul li {
+
+            color: #ffffff;
+            display: flex;
+            gap: 8px;
+        }
+
+        .enjoy-2 ul {
+            display: flex;
+            font-size: 14px;
+        }
+
+        .enjoy-2 ul li {
+            margin: 0px 8px 0px 0px;
+            color: #ffffff;
+
+        }
+
+        .enjoy-2 i {
+            border-radius: 50%;
+            width: 32px;
+            height: 32px;
+            border: 1px solid white;
+            text-align: center;
+            line-height: 30px;
+            transition: .5s;
+        }
+
+        .enjoy-2 i:hover {
+            background-color: #fff;
+            color: #14141f;
+        }
+
+        .home-area {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 0;
+            align-items: center;
+        }
+
+        .home-start {
+            display: flex;
+            text-align: center;
+            gap: 20px;
+        }
+
+        .home-start i {
+            font-size: 40px;
+            color: #86b817;
+        }
+
+        .home-start h2 {
+            font-size: 40px;
+            font-family: "Nunito";
+            color: #86b817;
+        }
+
+        .home-end {
+            display: flex;
+            gap: 30px;
+        }
+
+        .home-end li {
+            font-size: 16px;
+            font-family: "Nunito";
+            color: white;
+            transition: .5s;
+        }
+
+        .home-end li:hover {
+            color: #86b817;
+        }
+
+        nav {
+            border-bottom: 1px solid #2c3e50;
+            position: absolute;
+            top: 40px;
+            width: 100%;
+        }
+
+        .button-area {
+            color: white;
+            background-color: #86b817;
+            padding: 8px 24px;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+
+        .vacation-area {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .input_area {
+            position: relative;
+            display: inline-block;
+        }
+
+        .input_area button {
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transform: translateY(-50%);
+        }
+
+        .input_area button {
+            font-size: 16px;
+            font-family: "Nunito";
+            color: white;
+            background-color: #86b817;
+            padding: 8px 24px;
+            border-radius: 20px;
+            border: none;
+        }
+
+        .input_area input {
+            width: 700px;
+            padding: 20px;
+            outline: none;
+            border: none;
+            border-radius: 30px;
+        }
+
+        #hero {
+            background: linear-gradient(rgba(20, 20, 31, .7), rgba(20, 20, 31, .7)), url("img/bg-hero.jpg");
+            padding: 300px 0 200px 0;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .vacation-area h1 {
+            color: #ffffff;
+            font-size: 64px;
+            font-family: "Nunito";
+            margin-bottom: 30px;
+        }
+
+        .vacation-area p {
+            color: #ffffff;
+            font-family: "Nunito";
+            font-size: 24px;
+            margin-bottom: 24px;
+        }
+        .home-end li a{
+            font-size: 16px;
+            font-family: "Nunito";
+            color: #fff;
+            transition: .5s;
+        }
+        .home-end li a:hover{
+            color: #86b817;
+        }
+        .home-class {
+            padding: 20px 5px;
+            display:  none;
+            position: absolute;
+            top: 10px;
+            left: 0;
+            width: 150px;
+        }
+        .dropdown:hover .home-class {
+            display: block;
+        }
+        .dropdown {
+            position: relative;
+        }
+        .home-class li{
+            font-size: 15px;
+            font-family: "Nunito";
+            color: #14141f !important;
+            background-color: #fff;
+            padding: 6px 16px;
+        }
+        .home-class li:hover{
+            background-color: #e9ecef;
+        }
+
+        @media (max-width: 575px) {
+            header {
+                display: none;
+            }
+
+            nav {
+                display: none;
+            }
+
+            .container {
+                width: 100%;
+                padding: 0 15px;
+            }
+
+            #hero {
+                padding: 20px 0 20px 0;
+            }
+
+            .vacation-area h1 {
+                font-size: 22px;
+                margin-bottom: 25px;
+            }
+
+            .vacation-area p {
+                font-size: 14px;
+                margin-bottom: 14px;
+            }
+
+            .input_area input {
+                width: 340px;
+            }
+
+            .tourist {
+                flex-direction: column;
+                padding: 10px;
+            }
+
+            .tourist_left {
+                width: 100%;
+            }
+
+            .tourist_right {
+                width: 100%;
+            }
+
+            .about_img {
+                width: 100%;
+                height: auto;
+            }
+
+            .lorem {
+                width: 393px;
+            }
+
+            .abc {
+                font-size: 11px;
+            }
+
+            .right h1 {
+                font-size: 25px;
+            }
+
+            .lorem2 {
+                width: 380px;
+                height: 83px;
+            }
+
+            .fivestar {
+                gap: 0;
+                flex-direction: column;
+            }
+
+            .press-area {
+                margin-top: 126px;
+            }
+
+            .icon {
+                flex-wrap: wrap;
+                flex-direction: column;
+                gap: 30px;
+            }
+
+            .tour {
+                flex-direction: column;
+                gap: 30px;
+            }
+
+            .all-packages {
+                flex-direction: column;
+            }
+
+            .one {
+                width: 100%;
+            }
+
+            .mariyana {
+                margin-bottom: 60px;
+            }
+
+            .Easy {
+                flex-direction: column;
+            }
+
+            .booking {
+                flex-direction: column;
+            }
+
+            .output select {
+                width: 100%;
+                margin-bottom: 25px;
+            }
+
+            .output input {
+                width: 100%;
+            }
+
+            .booking .left {
+                width: 100%;
+            }
+
+            .booking .left h2 {
+                font-size: 27.69px;
+            }
+
+            .booking .right h1 {
+                margin-top: 42px;
+            }
+
+            .travel_people {
+                flex-direction: column;
+            }
+
+            .testimonial_people {
+                flex-direction: column;
+                gap: 30px;
+            }
+
+            .travel_people {
+                gap: 30px;
+            }
+
+            .company_area {
+                flex-direction: column;
+            }
+
+            .html-codex {
+                flex-direction: column;
+            }
+
+            .lorem {
+                width: 250px;
+            }
+
+            .lorem2 {
+                width: 250px;
+                height: 143px;
+            }
+
+            .booking .right {
+                width: 100%;
+            }
+
+            .html-codex p {
+                text-align: center;
+                padding-bottom: 20px;
+            }
+
+            .travel_people img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        @media (min-width: 576px) and (max-width: 767px) {
+            .container {
+                width: 90%;
+            }
+
+            .icon {
+                flex-wrap: wrap;
+            }
+
+            .art {
+                width: 48%;
+                margin-bottom: 20px;
+            }
+
+            .tour {
+                flex-wrap: wrap;
+            }
+
+            .tourist {
+                flex-wrap: wrap;
+            }
+
+            .tourist {
+                flex-wrap: wrap;
+            }
+
+            .tourist_left {
+                width: 90%;
+                margin-left: 31px;
+            }
+
+            .tourist_right {
+                width: 50%;
+                margin-left: 31px;
+            }
+
+            .all-packages {
+                display: flex;
+                gap: 40px;
+                flex-wrap: wrap;
+            }
+
+            .one {
+                width: 90%;
+                margin-left: 30px;
+            }
+
+
+            .Easy {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .mariyana {
+
+                width: 48%;
+                margin-top: 60px;
+            }
+
+            .booking {
+                flex-direction: column;
+                gap: 75px;
+            }
+
+            .booking .left {
+                width: 100%;
+            }
+
+            .booking .right {
+                width: 100%;
+            }
+
+            .travel_people {
+                flex-direction: column;
+                gap: 38px;
+            }
+
+            .travel_people img {
+                width: 100%;
+                height: auto;
+            }
+
+            .guide_img {
+                overflow: hidden;
+            }
+
+            .testimonial_people {
+                flex-direction: column;
+                gap: 30px;
+            }
+
+            .company_area {
+                flex-direction: column;
+            }
+
+            .icon_area {
+                gap: 3%;
+            }
+
+            .company .img_iteam img {
+                height: auto;
+                width: 32%;
+            }
+
+            .html-codex {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .company .img_iteam img {
+                border: 5px solid #fff;
+            }
+
+            .guide_img {
+                height: auto;
+                overflow: hidden;
+            }
+        }
+
+        .html-codex {
+            display: flex;
+            justify-content: space-between;
+            padding: 28px 42px;
+            align-items: center;
+            font-family: "Nunito";
+            color: #fff;
+            background-color: #14141f;
+            border-top: 1px solid #2c3e50;
+        }
+
+        .html-codex p a {
+            color: #fff;
+            text-decoration: underline;
+        }
+
+
+        .news ul {
+            display: flex;
+            gap: 20px;
+        }
+
+        .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
+	position: relative;
+	top: -17px;
+}
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="enjoy-area">
+                <div class="enjoy-1">
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p>123 Street, New York, USA</p>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-phone"></i>
+                            <p>+012 345 6789</p>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-envelope-open"></i>
+                            <p>info@example.com</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="enjoy-2">
+                    <ul>
+                        <li><i class="fa-brands fa-twitter"></i></li>
+                        <li><i class="fa-brands fa-facebook-f"></i></li>
+                        <li><i class="fa-brands fa-linkedin"></i></li>
+                        <li><i class="fa-brands fa-instagram"></i></li>
+                        <li><i class="fa-brands fa-square-youtube"></i></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <div class="home-area">
+                <div class="home-start">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <h2>Tourist</h2>
+                </div>
+                <div class="">
+                    <ul class="home-end">
+                        <li>Home</li>
+                        <li>About</li>
+                        <li>Services</li>
+                        <li>Packages</li>
+                        <li class="dropdown">
+                            <a href="">Pages <i class="fa-solid fa-caret-down"></i></a>
+                            <ul class="home-class">
+                                <li>Destination</li>
+                                <li>Booking</li>
+                                <li>Travel guides</li>
+                                <li>Testimonial</li>
+                                <li>404 pages</li>
+                            </ul>
+                        </li>
+                        <li>Contact</li>
+                        <li><a class="button-area" href="#">Register</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <section id="hero">
+        <div class="container">
+            <div class="vacation-area">
+                <div>
+                    <h1>Enjoy Your Vacation With Us</h1>
+                </div>
+                <div>
+                    <p>Tempor erat elitr rebum at clita diam amet diam et eos erat ipsum lorem sit</p>
+                </div>
+                <div class="input_area">
+                    <input type="text" placeholder="E:g Thailand">
+                    <button>Search</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- about section start -->
+    <section id="tr">
+        <div class="container">
+            <div class="tourist">
+                <div class="tourist_left">
+                    <img class="about_img" src="/img/about.jpg" alt="">
+                </div>
+                <div class="tourist_right">
+                    <h6 class="abc">About us</h6>
+                    <h1>Welcome to <span>tourist</span></h1>
+                    <p class="lorem">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam
+                        et eos.
+                        Clita erat
+                        ipsum et lorem et sit.</p>
+                    <p class="lorem2">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam
+                        et eos.
+                        Clita erat
+                        ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+                    <div class="fivestar">
+                        <ul class="fivestar_left">
+                            <li class="ak47">
+                                <i class="fa-solid fa-arrow-right" style="color: #86b817;" i></i>
+                                <p>frist class flights</p>
+                            </li>
+                            <li class="ak47">
+                                <i class="fa-solid fa-arrow-right" style="color: #86b817;" i></i>
+                                <p>5 star accommodations</p>
+                            </li>
+                            <li class="ak47">
+                                <i class="fa-solid fa-arrow-right" style="color: #86b817;" i></i>
+                                <p>150 premium city tours</p>
+                            </li>
+                        </ul>
+                        <ul class="fivestar_right">
+                            <li class="ak47">
+                                <i class="fa-solid fa-arrow-right" style="color: #86b817;" i></i>
+                                <p>frist class flights</p>
+                            </li>
+                            <li class="ak47">
+                                <i class="fa-solid fa-arrow-right" style="color: #86b817" i></i>
+                                <p>5 star accommodations</p>
+                            </li>
+                            <li class="ak47">
+                                <i class="fa-solid fa-arrow-right" style="color: #86b817;" i></i>
+                                <p>150 premium city tours</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="press-area"><a href="">Read More</a></div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- about section end -->
+
+    <section class="service-area">
+        <div class="container">
+            <div class="midel">
+                <p>SERVICES</p>
+                <H1>Our Services</H1>
+            </div>
+            <div class="icon">
+                <div class="art">
+                    <i class="fa-solid fa-globe"></i>
+                    <h3>Worldwide Tours</h3>
+                    <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+                </div>
+                <div class="art">
+                    <i class="fa-solid fa-hotel"></i>
+                    <h3>Hotel Reservation</h3>
+                    <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+                </div>
+                <div class="art">
+                    <i class="fa-solid fa-user"></i>
+                    <h3>Travel Guides</h3>
+                    <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+                </div>
+                <div class="art">
+                    <i class="fa-solid fa-gear"></i>
+                    <h3>Event Managment</h3>
+                    <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+                </div>
+            </div>
+            <div class="tour">
+                <div class="art">
+                    <i class="fa-solid fa-globe"></i>
+                    <h3>Worldwide Tours</h3>
+                    <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+                </div>
+                <div class="art">
+                    <i class="fa-solid fa-hotel"></i>
+                    <h3>Hotel Reservation</h3>
+                    <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+                </div>
+                <div class="art">
+                    <i class="fa-solid fa-user"></i>
+                    <h3>Travel Guides</h3>
+                    <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+                </div>
+                <div class="art">
+                    <i class="fa-solid fa-gear"></i>
+                    <h3>Event Managment</h3>
+                    <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- packages -->
+    <section class="package-area">
+        <div class="container">
+            <div class="package_head">
+                <h6 class="beauty">PACKAGES</h6>
+                <h1 class="desinge">Awesome packages</h1>
+            </div>
+            <div class="all-packages">
+                <div class="one">
+                    <img src="/img/package-1.jpg" alt="">
+                    <div class="place">
+                        <div class="awm">
+                            <i class="fa-solid fa-location-dot" style="color: #86b817;"></i>
+                            <p>Thailand</p>
+                        </div>
+                        <div class="awm">
+                            <i class="fa-solid fa-calendar-days" style="color: #86b817;"></i>
+                            <p>3 days</p>
+                        </div>
+                        <div class="awm">
+                            <i class="fa-regular fa-user" style="color: #86b817;"></i>
+                            <p>2 Person</p>
+                        </div>
+                    </div>
+                    <div class="card_content">
+                        <div class="amount">
+                            <h3>$149.00</h3>
+                            <i class="fa-solid fa-star" style="color: #86b817;"></i>
+                            <i class="fa-solid fa-star" style="color: #86b817;"></i>
+                            <i class="fa-solid fa-star" style="color: #86b817;"></i>
+                            <i class="fa-solid fa-star" style="color: #86b817;"></i>
+                            <i class="fa-solid fa-star" style="color: #86b817;"></i>
+                        </div>
+                        <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam eos</p>
+                        <div class="button">
+                            <button class="left">Read More</button>
+                            <button class="right">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="one">
+                    <img src="/img/package-2.jpg" alt="">
+                    <div class="place">
+                        <div class="awm">
+                            <i class="fa-solid fa-location-dot" style="color: #86b817;"></i>
+                            <p>indonesia</p>
+                        </div>
+                        <div class="awm">
+                            <i class="fa-solid fa-calendar-days" style="color:#86b817;"></i>
+                            <p>3 days</p>
+                        </div>
+                        <div class="awm">
+                            <i class="fa-regular fa-user" style="color: #86b817;"></i>
+                            <p>2 person</p>
+                        </div>
+                    </div>
+                    <div class="card_content">
+                        <div class="amount">
+                            <h3>$139.00</h3>
+                            <i class="fa-solid fa-star" style="color: #86b817;"></i>
+                            <i class="fa-solid fa-star" style="color: #86b817;"></i>
+                            <i class="fa-solid fa-star" style="color: #86b817;"></i>
+                            <i class="fa-solid fa-star" style="color: #86b817;"></i>
+                            <i class="fa-solid fa-star" style="color: #86b817;"></i>
+                        </div>
+                        <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam eos</p>
+                        <div class="button">
+                            <button class="left">read more</button>
+                            <button class="right">book now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="one">
+                    <img src="/img/package-3.jpg" alt="">
+                    <div class="place">
+                        <div class="awm">
+                            <i class="fa-solid fa-location-dot" style="color: #86b817;"></i>
+                            <p>Malaysia</p>
+                        </div>
+                        <div class="awm">
+                            <i class="fa-solid fa-calendar-days" style="color: #86b817;"></i>
+                            <p>3 days</p>
+                        </div>
+                        <div class="awm">
+                            <i class="fa-regular fa-user" style="color: #86b817;"></i>
+                            <p>2 person</p>
+                        </div>
+                    </div>
+                    <div class="card_content">
+                        <div class="amount">
+                            <h3>$189.00</h3>
+                            <i class="fa-solid fa-star" style="color: #86b817;"></i>
+                            <i class="fa-solid fa-star" style="color: #86b817;"></i>
+                            <i class="fa-solid fa-star" style="color: #86b817;"></i>
+                            <i class="fa-solid fa-star" style="color: #86b817;"></i>
+                            <i class="fa-solid fa-star" style="color: #85b817;"></i>
+                            <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam eos</p>
+                            <div class="button">
+                                <button class="left">read more</button>
+                                <button class="right">book now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="process-area process-swiper">
+        <div class="container">
+            <div class="team">
+                <h6 class="idea">PROCESS</h6>
+                <H2 class="kolkata">3 Easy steps</H2>
+            </div>
+            <div class="Easy">
+
+                <div class="swiper process">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="mariyana">
+                            <i class="fa-solid fa-globe"></i>
+                            <h4>Chooae A Destination</h4>
+                            <p>Tempor erat elitr rebum clita dolor diam ipsum sit diam amet diam eos erat ipsum et lorem et sit
+                                sed stet
+                                lorem sit</p>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="mariyana">
+                            <i class="fa-solid fa-sack-dollar"></i>
+                            <h4>Pay Online</h4>
+                            <p>Tempor erat elitr rebum clita dolor diam ipsum sit diam amet diam eos erat ipsum et lorem et sit
+                                sed stet
+                                lorem sit</p>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="mariyana">
+                            <i class="fa-solid fa-jet-fighter"></i>
+                            <h4>Fly Todsy</h4>
+                            <p>Tempor erat elitr rebum clita dolor diam ipsum sit diam amet diam eos erat ipsum et lorem et sit
+                                sed stet
+                                lorem sit</p>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="mariyana">
+                            <i class="fa-solid fa-jet-fighter"></i>
+                            <h4>Fly Todsy</h4>
+                            <p>Tempor erat elitr rebum clita dolor diam ipsum sit diam amet diam eos erat ipsum et lorem et sit
+                                sed stet
+                                lorem sit</p>
+                        </div>
+                      </div>
+
+                    </div>
+                    <div class="swiper-pagination"></div>
+                  </div>
+
+
+
+                <!-- <div class="mariyana">
+                    <i class="fa-solid fa-globe"></i>
+                    <h4>Chooae A Destination</h4>
+                    <p>Tempor erat elitr rebum clita dolor diam ipsum sit diam amet diam eos erat ipsum et lorem et sit
+                        sed stet
+                        lorem sit</p>
+                </div>
+                <div class="mariyana">
+                    <i class="fa-solid fa-sack-dollar"></i>
+                    <h4>Pay Online</h4>
+                    <p>Tempor erat elitr rebum clita dolor diam ipsum sit diam amet diam eos erat ipsum et lorem et sit
+                        sed stet
+                        lorem sit</p>
+                </div>
+                <div class="mariyana">
+                    <i class="fa-solid fa-jet-fighter"></i>
+                    <h4>Fly Todsy</h4>
+                    <p>Tempor erat elitr rebum clita dolor diam ipsum sit diam amet diam eos erat ipsum et lorem et sit
+                        sed stet
+                        lorem sit</p>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- original process sectoin -->
+    <section class="process-area">
+        <div class="container">
+            <div class="team">
+                <h6 class="idea">PROCESS</h6>
+                <H2 class="kolkata">3 Easy steps</H2>
+            </div>
+            <div class="Easy">
+                <div class="mariyana">
+                    <i class="fa-solid fa-globe"></i>
+                    <h4>Chooae A Destination</h4>
+                    <p>Tempor erat elitr rebum clita dolor diam ipsum sit diam amet diam eos erat ipsum et lorem et sit
+                        sed stet
+                        lorem sit</p>
+                </div>
+                <div class="mariyana">
+                    <i class="fa-solid fa-sack-dollar"></i>
+                    <h4>Pay Online</h4>
+                    <p>Tempor erat elitr rebum clita dolor diam ipsum sit diam amet diam eos erat ipsum et lorem et sit
+                        sed stet
+                        lorem sit</p>
+                </div>
+                <div class="mariyana">
+                    <i class="fa-solid fa-jet-fighter"></i>
+                    <h4>Fly Todsy</h4>
+                    <p>Tempor erat elitr rebum clita dolor diam ipsum sit diam amet diam eos erat ipsum et lorem et sit
+                        sed stet
+                        lorem sit</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="booking-area">
+        <div class="container">
+            <div class="booking_shadow">
+                <div class="booking">
+                    <div class="left">
+                        <h6>BOOKING</h6>
+                        <H2>Online Booking</H2>
+                        <p>
+                            Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos.
+                            Clita erat ipsum et lorem et sit.
+                        </p>
+                        <span>
+                            Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos.
+                            Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet
+                        </span>
+                        <a href="#">Read More</a>
+                    </div>
+                    <div class="right">
+                        <h1>Book A Tour</h1>
+                        <div class="output">
+                            <input type="text" id="Your name" placeholder="Your Name">
+                            <input type="text" id="Your Email" placeholder="Your Email">
+                            <input type="text" id="Date & Time" placeholder="Date & Time">
+                            <select name="select1" id="Destination">
+                                <option value="">Option 1</option>
+                                <option value="">Option 2</option>
+                                <option value="">Option 3</option>
+                            </select>
+                            <textarea name="" id="" placeholder="Special Request"></textarea>
+                        </div>
+                        <button>Book Now</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- travel_area -->
+    <section class="travel-area">
+        <div class="container">
+                <div class="travel">
+                    <h6>TRAVEL GUIDE</h6>
+                    <H2>Meet out guide</H2>
+                </div>
+                <div class="travel_people">
+                    <div class="swiper travel-swiper">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <div class="guide_item">
+                                <div class="guide_img">
+                                    <img src="/img/team-1.jpg" alt="">
+                                </div>
+                                <div class="band">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                    <i class="fa-brands fa-square-twitter"></i>
+                                    <i class="fa-brands fa-square-instagram"></i>
+                                </div>
+                                <div class="desig_area">
+                                    <h4>Full Name</h4>
+                                    <p>Designation</p>
+                                </div>
+                            </div>
+                          </div>
+
+
+                          <div class="swiper-slide">
+                            <div class="guide_item">
+                                <div class="guide_img">
+                                    <img src="/img/team-2.jpg" alt="">
+                                </div>
+                                <div class="band">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                    <i class="fa-brands fa-square-twitter"></i>
+                                    <i class="fa-brands fa-square-instagram"></i>
+                                </div>
+                                <div class="desig_area">
+                                    <h4>Full Name</h4>
+                                    <p>Designation</p>
+                                </div>
+                            </div> 
+                          </div>
+
+                          <div class="swiper-slide">
+                            <div class="guide_item">
+                                <div class="guide_img">
+                                    <img src="/img/team-3.jpg" alt="">
+                                </div>
+                                <div class="band">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                    <i class="fa-brands fa-square-twitter"></i>
+                                    <i class="fa-brands fa-square-instagram"></i>
+                                </div>
+                                <div class="desig_area">
+                                    <h4>Full Name</h4>
+                                    <p>Designation</p>
+                                </div>
+                            </div> 
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="guide_item">
+                                <div class="guide_img">
+                                    <img src="/img/team-4.jpg" alt="">
+                                </div>
+                                <div class="band">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                    <i class="fa-brands fa-square-twitter"></i>
+                                    <i class="fa-brands fa-square-instagram"></i>
+                                </div>
+                                <div class="desig_area">
+                                    <h4>Full Name</h4>
+                                    <p>Designation</p>
+                                </div>
+                            </div> 
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="guide_item">
+                                <div class="guide_img">
+                                    <img src="/img/team-4.jpg" alt="">
+                                </div>
+                                <div class="band">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                    <i class="fa-brands fa-square-twitter"></i>
+                                    <i class="fa-brands fa-square-instagram"></i>
+                                </div>
+                                <div class="desig_area">
+                                    <h4>Full Name</h4>
+                                    <p>Designation</p>
+                                </div>
+                            </div> 
+                          </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+                      </div>
+                </div>
+
+            <!-- <div class="travel_people">
+                <div class="guide_item">
+                    <div class="guide_img">
+                        <img src="/img/team-1.jpg" alt="">
+                    </div>
+                    <div class="band">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-square-twitter"></i>
+                        <i class="fa-brands fa-square-instagram"></i>
+                    </div>
+                    <div class="desig_area">
+                        <h4>Full Name</h4>
+                        <p>Designation</p>
+                    </div>
+                </div>
+                <div class="guide_item">
+                    <div class="guide_img">
+                        <img src="/img/team-2.jpg" alt="">
+                    </div>
+                    <div class="band">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-square-twitter"></i>
+                        <i class="fa-brands fa-square-instagram"></i>
+                    </div>
+                    <div class="desig_area">
+                        <h4>Full Name</h4>
+                        <p>Designation</p>
+                    </div>
+                </div>
+                <div class="guide_item">
+                    <div class="guide_img">
+                        <img src="/img/team-3.jpg" alt="">
+                    </div>
+                    <div class="band">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-square-twitter"></i>
+                        <i class="fa-brands fa-square-instagram"></i>
+                    </div>
+                    <div class="desig_area">
+                        <h4>Full Name</h4>
+                        <p>Designation</p>
+                    </div>
+                </div>
+                <div class="guide_item">
+                    <div class="guide_img">
+                        <img src="/img/team-4.jpg" alt="">
+                    </div>
+                    <div class="band">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-square-twitter"></i>
+                        <i class="fa-brands fa-square-instagram"></i>
+                    </div>
+                    <div class="desig_area">
+                        <h4>Full Name</h4>
+                        <p>Designation</p>
+                    </div>
+                </div>
+
+            </div> -->
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonial-area">
+        <div class="container">
+            <div class="testimonial_side">
+                <h6>TESTIMONIAL</h6>
+                <H1>Our Clients Say!!!</H1>
+                <div class="testimonial_people">
+                    <div class="swiper testimonial-swiper">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <div class="people">
+                                <img src="/img/testimonial-1.jpg" alt="">
+                                <h5>John Doe</h5>
+                                <p> New York, USA</p>
+                                <p>Tempor erat elitr tebum at clita. Dila dolor dilam ipsum sit dilam amet dilam et eos.clita
+                                    erat ipsum et
+                                    lorem et sit</p>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="people">
+                                <img src="/img/testimonial-2.jpg" alt="">
+                                <h5>John Doe</h5>
+                                <p> New York, USA</p>
+                                <p>Tempor erat elitr tebum at clita. Dila dolor dilam ipsum sit dilam amet dilam et eos.clita
+                                    erat ipsum et
+                                    lorem et sit</p>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="people">
+                                <img src="/img/testimonial-3.jpg" alt="">
+                                <h5>John Doe</h5>
+                                <p> New York, USA</p>
+                                <p>Tempor erat elitr tebum at clita. Dila dolor dilam ipsum sit dilam amet dilam et eos.clita
+                                    erat ipsum et
+                                    lorem et sit</p>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="people">
+                                <img src="/img/testimonial-4.jpg" alt="">
+                                <h5>John Doe</h5>
+                                <p> New York, USA</p>
+                                <p>Tempor erat elitr tebum at clita. Dila dolor dilam ipsum sit dilam amet dilam et eos.clita
+                                    erat ipsum et
+                                    lorem et sit</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                      </div>
+
+
+
+
+                    <!-- <div class="people">
+                        <img src="/img/testimonial-1.jpg" alt="">
+                        <h5>John Doe</h5>
+                        <p> New York, USA</p>
+                        <p>Tempor erat elitr tebum at clita. Dila dolor dilam ipsum sit dilam amet dilam et eos.clita
+                            erat ipsum et
+                            lorem et sit</p>
+                    </div>
+                    <div class="people">
+                        <img src="/img/testimonial-2.jpg" alt="">
+                        <h5>John Doe</h5>
+                        <p> New York, USA</p>
+                        <p>Tempor erat elitr tebum at clita. Dila dolor dilam ipsum sit dilam amet dilam et eos.clita
+                            erat ipsum et
+                            lorem et sit</p>
+                    </div>
+                    <div class="people">
+                        <img src="/img/testimonial-3.jpg" alt="">
+                        <h5>John Doe</h5>
+                        <p> New York, USA</p>
+                        <p>Tempor erat elitr tebum at clita. Dila dolor dilam ipsum sit dilam amet dilam et eos.clita
+                            erat ipsum et
+                            lorem et sit</p>
+                    </div>
+                    <div class="people">
+                        <img src="/img/testimonial-4.jpg" alt="">
+                        <h5>John Doe</h5>
+                        <p> New York, USA</p>
+                        <p>Tempor erat elitr tebum at clita. Dila dolor dilam ipsum sit dilam amet dilam et eos.clita
+                            erat ipsum et
+                            lorem et sit</p>
+                    </div> -->
+                </div>
+                <div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <div class="company_area">
+                <div class="company">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Privacy Polict</a></li>
+                        <li><a href="#">terms & condition</a></li>
+                        <li><a href="#">FAQs & Help</a></li>
+                    </ul>
+                </div>
+                <div class="company">
+                    <h4>Contact</h4>
+                    <div class="icon_area">
+                        <i class="fa-solid fa-location-dot" style="color: #ffffff;"></i>
+                        <p>123 street, new Youk,USA</p>
+                    </div>
+                    <div class="icon_area">
+                        <i class="fa-solid fa-phone" style="color: #ffffff;"></i>
+                        <p>+01234567890</p>
+                    </div>
+                    <div class="icon_area">
+                        <i class="fa-solid fa-envelope" style="color: #ffffff;"></i>
+                        <p>mail@domain.com</p>
+                    </div>
+                    <div class="icon_white">
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </div>
+                </div>
+                <div class="company">
+                    <h4>Gallery</h4>
+                    <div class="img_iteam">
+                        <img src="/img/package-1.jpg" alt="">
+                        <img src="/img/package-2.jpg" alt="">
+                        <img src="/img/package-3.jpg" alt="">
+                    </div>
+                    <div class="img_iteam">
+                        <img src="/img/package-1.jpg" alt="">
+                        <img src="/img/package-2.jpg" alt="">
+                        <img src="/img/package-3.jpg" alt="">
+                    </div>
+                </div>
+                <div class="company">
+                    <h4>Newsletter</h4>
+                    <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+                </div>
+            </div>
+            <div class="html-codex">
+                <div>
+                    <p> &copy; Your Site Name,All Right Reserved. Designed By <a href="#">HTML Codex</a></p>
+                </div>
+                <div class="news">
+                    <ul>
+                        <li>Home</li>
+                        <li>Cookies</li>
+                        <li>Help</li>
+                        <li>FAQs</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        // testimonial section slider
+        var swiper = new Swiper(".testimonial-swiper", {
+          slidesPerView: 3,
+          spaceBetween: 30,
+          loop:true,
+          autoplay: {
+            delay:1500
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+        });
+
+        // travel guide section slider
+        var swiper = new Swiper(".travel-swiper", {
+            direction: 'horizontal',
+            slidesPerView: 4,
+      spaceBetween: 30,
+      autoplay:{
+        delay:1000,
+      },
+      rtl:true,
+      loop:true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+    });
+
+
+    // process-area section slider
+    var swiper = new Swiper(".process", {
+            direction: 'horizontal',
+            slidesPerView: 3,
+      spaceBetween: 30,
+      autoplay:{
+        delay:1000,
+      },
+      loop:true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      }
+    });
+      </script>
+</body>
+
+</html>
